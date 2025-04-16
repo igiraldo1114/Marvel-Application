@@ -14,7 +14,7 @@ function NotFound() {
         }, 1000);
 
         const timeout = setTimeout(() => {
-            navigate('/main');
+            navigate('/');
         }, 10000);
 
         return () => {
@@ -30,7 +30,7 @@ function NotFound() {
             <Card className="mt-4">
                 <Card.Body>
                     <Card.Title>Redirecting in {countdown} seconds...</Card.Title>
-                    <Link to="/main" className="btn btn-danger">Go to Home</Link>
+                    <Link to="/" className="btn btn-danger">Go to Home</Link>
                 </Card.Body>
             </Card>
         </Container>

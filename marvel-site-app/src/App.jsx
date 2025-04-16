@@ -1,6 +1,6 @@
 
 import { Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar';
+import Navbar from './components/NavBar';
 import HomePage from './components/HomePage';
 import Characters from './components/Characters';
 import CharInfo from './components/CharInfo';
@@ -19,7 +19,7 @@ function App() {
     <h1>Marvel Library</h1>
     <Navbar />
     <Routes>
-      <Route path='/main' element={ <HomePage/>} />
+      <Route path='/' element={ <HomePage/>} />
       <Route path='/characters' element={ <Characters/>} />
       <Route path='/characters/:id' element={ <CharInfo/>} />
       <Route path='/user-form' element={ <UserForm/>} />
